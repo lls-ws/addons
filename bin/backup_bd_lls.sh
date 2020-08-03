@@ -70,7 +70,7 @@ enviar_backup()
 	
 	echo "Enviando backup por email..."
 	
-	echo -e "to: ${DESTINATARIO}\nsubject: Backup LLS\n" |
+	echo -e "to: ${DESTINATARIO}\nsubject: Backup LLS-WS\n" |
 	
 	(cat - && uuencode ${ARQ_ZIP} ${ARQ_ZIP}) |
 	
