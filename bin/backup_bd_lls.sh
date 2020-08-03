@@ -141,8 +141,9 @@ fi
 
 OPCAO="$1"
 
-DIR_LOG="log"
-DIR_SQL="sql"
+DIR_ADDON="/home/lls/addons"
+DIR_LOG="${DIR_ADDON}/log"
+DIR_SQL="${DIR_ADDON}/sql"
 
 ARQ_LOG="${DIR_LOG}/backup_bd_lls.log"
 #ARQ_DUMP="${DIR_SQL}/backup_bd_lls.dump"
@@ -160,9 +161,9 @@ CMD_BASE=$(echo "${CMD} ${BASE_OPT}")
 
 DESTINATARIO="lls.homeoffice@gmail.com"
 
-if [ -f "destinatario.txt" ]; then
+if [ -f "${DIR_ADDON}/destinatario.txt" ]; then
 
-	DESTINATARIO="`cat destinatario.txt`"
+	DESTINATARIO="`cat ${DIR_ADDON}/destinatario.txt`"
 
 fi
 
