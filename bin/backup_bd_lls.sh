@@ -166,10 +166,6 @@ if [ -f "destinatario.txt" ]; then
 
 fi
 
-echo "USER=${USER}"
-echo "PASSWORD=${PASSWORD}"
-echo "DESTINATARIO=${DESTINATARIO}"
-
 case "$OPCAO" in
 	criar)    	
 		criar_backup
