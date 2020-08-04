@@ -17,7 +17,7 @@ if [ "$EUID" -ne 0 ]; then
   
 fi
 
-case "$OPCAO" in
+case "$1" in
 	update)    	
 		git_update
 		;; 
